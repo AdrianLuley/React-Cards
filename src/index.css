@@ -62,6 +62,6 @@ html {
     border-left: 1px solid #D7DBDD;
 }
 
-.cardGroup__cardDescription {
+.cardGroup__description {
     flex: 1;
 }
