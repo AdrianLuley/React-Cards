@@ -15,9 +15,7 @@ import React from 'react';
 const CardGroup = (props) => (
     <div className="cardGroup">
         {props.children}
-        <Card price="Free!" description="Trail" icon="fa-thumbs-o-up"/>
-        <Card price="$10.00" description="Basic tier" hint="(most popular)" icon="fa-trophy"/>
-        <Card price="$6000.00" description="Advanced tier" hint="(only for enterprise-level professionals)" icon="fa-bolt"/>
+       
         
     </div>
 );
@@ -39,8 +37,11 @@ const Card = (props) => (
 );
 
 const App = () => (
-    <CardGroup/>
-   
+    <CardGroup>
+        <Card price="Free!" description="Trail" icon="fa-thumbs-o-up"/>
+        <Card price="$10.00" description="Basic tier" hint="(most popular)" icon="fa-trophy"/>
+        <Card price="$6000.00" description="Advanced tier" hint="(only for enterprise-level professionals)" icon="fa-bolt"/>
+    </CardGroup>
 );
 
 export default App;
